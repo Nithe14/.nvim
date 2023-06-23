@@ -8,7 +8,8 @@ end
 vim.api.nvim_set_keymap('i', '<TAB>', 'coc#pum#visible() ? coc#pum#next(1) : CheckBackspace() ? "<Tab>" : coc#refresh()', { silent = true, expr = true })
 vim.api.nvim_set_keymap('i', '<S-TAB>', 'coc#pum#visible() ? coc#pum#prev(1) : "<C-h>"', { silent = true, expr = true })
 
-vim.api.nvim_set_keymap('i', '<CR>', 'coc#pum#visible() ? coc#pum#confirm() : "<C-g>u<CR><Right><c-r>=coc#on_enter()<CR>"', { silent = true, expr = true })
+--vim.api.nvim_set_keymap('i', '<CR>', 'coc#pum#visible() ? coc#pum#confirm() : "<C-g>u<CR><Right><c-r>=coc#on_enter()<CR>"', { silent = true, expr = true })
+vim.api.nvim_set_keymap('i', '<CR>', 'pumvisible() ? coc#pum#confirm() : "<CR>"', { silent = true, expr = true })
 
 vim.api.nvim_set_keymap('n', 'K', ':call ShowDocumentation()<CR>', { silent = true })
 

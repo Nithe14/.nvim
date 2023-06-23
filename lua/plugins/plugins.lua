@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
 }
 use {
   'nvim-telescope/telescope.nvim', tag = '0.1.1',
-   requires = { {'nvim-lua/plenary.nvim'} }
+   requires = { 'nvim-lua/plenary.nvim' }
 }
 use {'neoclide/coc.nvim', branch = 'release'}
 use 'preservim/nerdcommenter'
@@ -32,6 +32,7 @@ use 'elzr/vim-json'
 use 'lambdalisue/nerdfont.vim'
 use 'mg979/vim-visual-multi'
 use 'Einenlum/yaml-revealer'
+use 'nvim-tree/nvim-web-devicons' 
 
 if packer_bootstrap then
     require('packer').sync()

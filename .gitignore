@@ -1,4 +1,4 @@
-
+plugin/*
 undo/*
 !undo/.gitkeep
 lazy-lock.json
