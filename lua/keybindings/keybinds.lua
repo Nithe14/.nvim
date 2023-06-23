@@ -1,0 +1,4 @@
+vim.g.mapleader = ","
+vim.keymap.set('n', '<leader>w', ':w<cr>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>1q', ':q!<cr>', { noremap = true, silent = true })
+vim.keymap.set('n', '<Leader>q', ':lua require("keybindings.modules.close_buffer").close_buffer()<CR>', { noremap = true, silent = true  })
