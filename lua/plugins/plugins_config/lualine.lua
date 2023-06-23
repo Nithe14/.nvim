@@ -6,6 +6,7 @@ local function my_diagnostics()
         hint = ' ',
     }
 end
+--I know it is neovim but I like ths clasic icon very much
 local function vimek()
       return [[]]
 end
