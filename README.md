@@ -6,7 +6,7 @@ This is one day version of having fun with configuration.
 Run this commands to install my configs:
 ```bash
 #Maby backup your current config first ;)
-$ git clone https://github.com:Nithe14/.nvim.git ~/.config/nvim
+$ git clone https://github.com/Nithe14/.nvim.git ~/.config/nvim
 $ sed -i "s/nithe/$USER/g" ~/.config/nvim/lua/variables.lua
 ```
 The config is ready! This is time to install all plugins. Run this commands in nvim:
