@@ -46,6 +46,8 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 `<leader>c<Space>` - Comment/uncomment selected lines. In normal mode comment/uncomment current line.
 
 `<C-up/down>` - Trigger multi cursor.
+
+`<C-h/j/k/l>` - Switch focus to left/down/up/right window.
 ## Completion
 This config uses coc (https://github.com/neoclide/coc.nvim). So the code completion is very powerful and simple to use. Just find your favorite language coc server and install it from vim command. Exmaple:
 ```vim
