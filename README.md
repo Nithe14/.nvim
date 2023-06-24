@@ -59,6 +59,6 @@ This config uses coc (https://github.com/neoclide/coc.nvim). So the code complet
 NeoVim can keep all changes you made in a single dir. I set it to ~/.config/nvim/undo. So you can undo and redo changes in any file even if you close it.
 
 ## Styles
-There is a lualine with some theme, and custom colorscheme but you probably change it so whatever.
+There is a lualine with some theme, and iceberg colorscheme (https://github.com/cocopon/iceberg.vim) but you probably change it so whatever.
 
 _That's it for now..._
