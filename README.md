@@ -37,7 +37,9 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 
 `<leader>fgc` - Trigger floating git commits selector - telescope.
 
-`<leader>fgb` - Trigger floating git branches selector- telescope.
+`<leader>fgb` - Trigger floating git branches selector - telescope.
+
+`<leader>fcs` - Trigger flaoting colorscheme selector - telescope.
 
 `<leader>y` - Toggle undo tree.
 
