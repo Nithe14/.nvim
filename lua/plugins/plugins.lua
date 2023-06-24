@@ -33,6 +33,7 @@ use 'lambdalisue/nerdfont.vim'
 use 'mg979/vim-visual-multi'
 use 'Einenlum/yaml-revealer'
 use 'nvim-tree/nvim-web-devicons' 
+use 'jiangmiao/auto-pairs'
 
 if packer_bootstrap then
     require('packer').sync()
