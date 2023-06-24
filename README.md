@@ -2,6 +2,9 @@
 I recently switched from vim (using vimscript) to neovim (using lua), so I decided to publish my new config. This is not final version of course. My goal is to improve my configuration and keep it the same accross two systems: macos and arch. 
 This is one day version of having fun with configuration. 
 
+## Requirements
+- https://github.com/BurntSushi/ripgrep
+
 ## TL;DR
 Run this commands to install my configs:
 ```bash
