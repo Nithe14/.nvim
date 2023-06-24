@@ -34,6 +34,7 @@ use 'mg979/vim-visual-multi'
 use 'Einenlum/yaml-revealer'
 use 'nvim-tree/nvim-web-devicons' 
 use 'jiangmiao/auto-pairs'
+use 'nvim-treesitter/nvim-treesitter'
 
 if packer_bootstrap then
     require('packer').sync()

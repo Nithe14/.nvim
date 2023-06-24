@@ -11,4 +11,5 @@ require("plugins.plugins_config.undotree")
 require("plugins.plugins_config.visual-multi")
 require("plugins.plugins_config.yaml-revealer")
 require("plugins.plugins_config.coc")
+require("plugins.plugins_config.treesitter")
 
