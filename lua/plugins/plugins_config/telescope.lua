@@ -2,6 +2,15 @@ require('telescope').setup {
   defaults = {
     file_icons = true,
     file_icon_colors = true,
+    mappings = {
+      i = {
+        -- map actions.which_key to <C-h> (default: <C-/>)
+        -- actions.which_key shows the mappings for your picker,
+        -- e.g. git_{create, delete, ...}_branch for the git_branches picker
+        ["<C-j>"] = "move_selection_next",
+	["<C-k>"] = "move_selection_previous"
+      }
+    }
   }
 }
 local builtin = require('telescope.builtin')
@@ -12,3 +21,5 @@ vim.keymap.set('n', '<leader>fl', builtin.current_buffer_fuzzy_find, {})
 vim.keymap.set('n', '<leader>fcs', builtin.colorscheme, {})
 vim.keymap.set('n', '<leader>fgc', builtin.git_commits, {})
 vim.keymap.set('n', '<leader>fgb', builtin.git_branches, {})
+
+
