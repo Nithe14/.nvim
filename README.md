@@ -7,15 +7,15 @@
 6. [Other features](#other-features)
 7. [Styles](#styles)
 
-## About {#about}
+## About 
 I recently switched from vim (using vimscript) to neovim (using lua), so I decided to publish my new config. This is not final version of course. My goal is to improve my configuration and keep it the same accross two systems: macos and arch. 
 This is one day version of having fun with configuration. 
 
-## Requirements {#requirements}
+## Requirements
 - nvim >= 0.9.1
 - ripgrep (https://github.com/BurntSushi/ripgrep)
 
-## TL;DR {#tldr}
+## TL;DR
 Run this commands to install my configs:
 ```bash
 #Maybe backup your current config first ;)
@@ -29,7 +29,7 @@ The config is ready! This is time to install all plugins. Run this commands in n
 ```
 Everything should be set up :)
 
-## Keybindings {#keybindings}
+## Keybindings
 The most important keybind is as always leader. For me it is a `,` char. It's pretty handy, don't you think?
 
 #### Basic
@@ -68,15 +68,15 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 
 
 
-## Completion {#completion}
+## Completion 
 This config uses coc (https://github.com/neoclide/coc.nvim). So the code completion is very powerful and simple to use. Just find your favorite language coc server and install it from vim command. Exmaple:
 ```vim
 :CocInstall coc-rust-analyzer
 ```
-## Other features {#other-features}
+## Other features 
 NeoVim can keep all changes you made in a single dir. I set it to ~/.config/nvim/undo. So you can undo and redo changes in any file even if you close it.
 
-## Styles {#styles}
+## Styles 
 There is a lualine with some theme, and iceberg-based colorscheme (https://github.com/cocopon/iceberg.vim) with my background but you probably change it so whatever.
 
 _That's it for now..._
