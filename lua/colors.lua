@@ -4,7 +4,7 @@ vim.cmd('syntax enable')
 --Fix colorscheme colors error
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
-vim.cmd("colorscheme iceberg")
+vim.cmd("colorscheme iceberg-based")
 vim.cmd("highlight Normal ctermbg=NONE")
 vim.cmd("highlight nonText ctermbg=NONE")
 
