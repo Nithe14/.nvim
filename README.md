@@ -3,12 +3,13 @@ I recently switched from vim (using vimscript) to neovim (using lua), so I decid
 This is one day version of having fun with configuration. 
 
 ## Requirements
-- https://github.com/BurntSushi/ripgrep
+- nvim >= 0.9.1
+- ripgrep (https://github.com/BurntSushi/ripgrep)
 
 ## TL;DR
 Run this commands to install my configs:
 ```bash
-#Maby backup your current config first ;)
+#Maybe backup your current config first ;)
 $ git clone https://github.com/Nithe14/.nvim.git ~/.config/nvim
 $ sed -i "s/nithe/$USER/g" ~/.config/nvim/lua/variables.lua
 ```
@@ -22,37 +23,42 @@ Everything should be set up :)
 ## Keybindings
 The most important keybind is as always leader. For me it is a `,` char. It's pretty handy, don't you think?
 
-`<leader>w` - save current buffer.
+#### Basic
+| Mapping  |      Action   |
+|----------|:-------------:|
+| `<leader>w` |  Save current buffer |
+| `<leader>q` |  Close the buffer. If there is more buffers open only the current will be closed. |
+| `<leader>1q` | Force to close. Close all buffers, do not save them and do not warning about it.|
+| `<leader>y` | Toggle undo tree |
+| `<leader>tt` | Trigger floating terminal |
+|`<leader>c<Space>` | Comment/uncomment selected lines. In normal mode comment/uncomment current line. |
+|`<leader><cr>` | Clear all selected matching |
+| `<C-h/j/k/l>` | Switch focus to left/down/up/right window |
+|`<C-up/down>` | Trigger multi cursor. |
 
-`<leader>q` - Close the buffer. If there is more buffers open only the current would be closed.
+#### Telescope 
 
-`<leader>1q` - Force to close. Close all buffers, do not save files and do not warning about it.
+| Mapping  |      Action   |
+|----------|:-------------:|
+| `<leader>ff` | Trigger floating fuzzy file finder. |
+|`<leader>fg` | Trigger floating live grep. | 
+|`<leader>fb` | Trigger floating buffers selector. |
+|`<leader>fl` | Trigger floating fuzzy line finder. |
+|`<leader>fm` | Trigger floating old files (mru) finder. |
+|`<leader>ft` | Trigger floating file tupe selector. |
+|`<leader>ftt` | Trigger floating treesitter (funcs, variable, structs finder). |
+|`<leader>fcs` | Trigger floating colorscheme selector. |
+|`<leader>fgc` | Trigger floating git commits selector. |
+|`<leader>fgb` | Trigger floating git branches selector. |
+|`<leader>fcs` | Trigger flaoting colorscheme selector. |
 
-`<leader>tt` - Trigger floating terminal.
+#### Ranger
+| Mapping  |      Action   |
+|----------|:-------------:|
+|`<leader>rr` | Open ranger in the current path. |
 
-`<leader>ff` - Trigger floating fuzzy file finder - telescope.
 
-`<leader>fg` - Trigger floating live grep - telescope.
 
-`<leader>fb` - Trigger floating buffers selector - telescope.
-
-`<leader>fl` - Trigger floating fuzzy line finder - telescope.
-
-`<leader>fgc` - Trigger floating git commits selector - telescope.
-
-`<leader>fgb` - Trigger floating git branches selector - telescope.
-
-`<leader>fcs` - Trigger flaoting colorscheme selector - telescope.
-
-`<leader>y` - Toggle undo tree.
-
-`<leader>r` - Open ranger in the current path.
-
-`<leader>c<Space>` - Comment/uncomment selected lines. In normal mode comment/uncomment current line.
-
-`<C-up/down>` - Trigger multi cursor.
-
-`<C-h/j/k/l>` - Switch focus to left/down/up/right window.
 ## Completion
 This config uses coc (https://github.com/neoclide/coc.nvim). So the code completion is very powerful and simple to use. Just find your favorite language coc server and install it from vim command. Exmaple:
 ```vim
@@ -62,6 +68,6 @@ This config uses coc (https://github.com/neoclide/coc.nvim). So the code complet
 NeoVim can keep all changes you made in a single dir. I set it to ~/.config/nvim/undo. So you can undo and redo changes in any file even if you close it.
 
 ## Styles
-There is a lualine with some theme, and iceberg colorscheme (https://github.com/cocopon/iceberg.vim) but you probably change it so whatever.
+There is a lualine with some theme, and iceberg-based colorscheme (https://github.com/cocopon/iceberg.vim) with my background but you probably change it so whatever.
 
 _That's it for now..._
