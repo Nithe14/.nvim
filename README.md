@@ -79,4 +79,7 @@ NeoVim can keep all changes you made in a single dir. I set it to ~/.config/nvim
 ## Styles 
 There is a lualine with some theme, and iceberg-based colorscheme (https://github.com/cocopon/iceberg.vim) with my background but you probably change it so whatever.
 
+It looks like this:
+![preview](./assets/styles.png)
+
 _That's it for now..._
