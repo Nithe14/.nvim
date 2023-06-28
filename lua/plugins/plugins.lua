@@ -23,7 +23,6 @@ use {
 }
 use {'neoclide/coc.nvim', branch = 'release'}
 use 'preservim/nerdcommenter'
-use 'francoiscabrol/ranger.vim'
 use {'rust-lang/rust.vim', branch = 'master'}
 use 'mbbill/undotree'
 use 'timonv/vim-cargo'
@@ -32,10 +31,10 @@ use 'elzr/vim-json'
 use 'lambdalisue/nerdfont.vim'
 use 'mg979/vim-visual-multi'
 use 'Einenlum/yaml-revealer'
-use 'nvim-tree/nvim-web-devicons' 
+use 'nvim-tree/nvim-web-devicons'
 use 'jiangmiao/auto-pairs'
 use 'nvim-treesitter/nvim-treesitter'
-
+use 'is0n/fm-nvim'
 
 if packer_bootstrap then
     require('packer').sync()
