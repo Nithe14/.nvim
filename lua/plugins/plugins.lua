@@ -35,6 +35,7 @@ use 'nvim-tree/nvim-web-devicons'
 use 'jiangmiao/auto-pairs'
 use 'nvim-treesitter/nvim-treesitter'
 use 'is0n/fm-nvim'
+use { "catppuccin/nvim", as = "catppuccin" }
 
 if packer_bootstrap then
     require('packer').sync()
