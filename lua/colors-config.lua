@@ -12,4 +12,3 @@ vim.cmd("highlight nonText ctermbg=NONE")
 --This configs fix colors in the floating windows
 vim.api.nvim_set_hl(0, "FloatBorder", {bg="#181825"})
 vim.api.nvim_set_hl(0, "NormalFloat", {bg="#181825"})
-

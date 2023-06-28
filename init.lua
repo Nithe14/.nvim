@@ -1,6 +1,6 @@
 require("keybindings.keybinds")
 require("plugins.plugins")
 require("plugins.plugins_config")
-require("colors")
+require("colors-config")
 require("variables")
 require("basic")
