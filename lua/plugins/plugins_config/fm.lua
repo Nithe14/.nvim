@@ -16,7 +16,7 @@ require('fm-nvim').setup{
 			border    = "rounded",
 
 			-- Highlight group for floating window/border (see ':h winhl')
-			float_hl  = "Normal",
+			float_hl  = "NormalFloat",
 			border_hl = "FloatBorder",
 
 			-- Floating Window Transparency (see ':h winblend')
