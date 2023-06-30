@@ -9,7 +9,7 @@
 
 ## About 
 I recently switched from vim (using vimscript) to neovim (using lua), so I decided to publish my new config. This is not final version of course. My goal is to improve my configuration and keep it the same accross two systems: macos and arch. 
-This is one day version of having fun with configuration. 
+This is two days version of having fun with configuration. 
 
 ## Requirements
 - nvim >= 0.9.1
