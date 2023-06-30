@@ -61,6 +61,12 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<leader>fgb` | Trigger floating git branches selector. |
 |`<leader>fcs` | Trigger flaoting colorscheme selector. |
 
+#### Packer
+| Mapping  |    Action     |
+|----------|:-------------:|
+|`<leader>PI`| Install all plugins |
+| `<leader>PS`| Sync/Upgrade all plugins |
+
 #### Ranger
 | Mapping  |      Action   |
 |----------|:-------------:|
