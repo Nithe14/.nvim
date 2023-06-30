@@ -13,4 +13,3 @@ require("plugins.plugins_config.coc")
 require("plugins.plugins_config.treesitter")
 require("plugins.plugins_config.fm")
 require("plugins.plugins_config.packer")
-

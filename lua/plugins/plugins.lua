@@ -36,7 +36,14 @@ use 'jiangmiao/auto-pairs'
 use 'nvim-treesitter/nvim-treesitter'
 use 'is0n/fm-nvim'
 use { "catppuccin/nvim", as = "catppuccin" }
-
+use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+        require("nvim-surround").setup({
+        })
+    end
+})
 if packer_bootstrap then
     require('packer').sync()
   end
