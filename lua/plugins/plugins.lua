@@ -35,6 +35,8 @@ use 'nvim-tree/nvim-web-devicons'
 use 'jiangmiao/auto-pairs'
 use 'nvim-treesitter/nvim-treesitter'
 use 'is0n/fm-nvim'
+use 'sunjon/shade.nvim'
+use 'folke/twilight.nvim'
 use { "catppuccin/nvim", as = "catppuccin" }
 use({
     "kylechui/nvim-surround",
@@ -44,6 +46,8 @@ use({
         })
     end
 })
+use 'lfrati/onesearch.nvim'
+
 if packer_bootstrap then
     require('packer').sync()
   end

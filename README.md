@@ -41,6 +41,9 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 | `<leader>y` | Toggle undo tree |
 | `<leader>tt` | Trigger floating terminal |
 |`<leader>c<Space>` | Comment/uncomment selected lines. In normal mode comment/uncomment current line. |
+|`<leader>l` | Toggle twilight (focus mode) |
+|`<leader>s` | Toggle shade (dim unselected tabs)|
+|`<M-Up/Down>` | Shade brightness up/down |
 |`<leader><cr>` | Clear all selected matching |
 | `<C-h/j/k/l>` | Switch focus to left/down/up/right window |
 |`<C-up/down>` | Trigger multi cursor. |
@@ -61,13 +64,13 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<leader>fgb` | Trigger floating git branches selector. |
 |`<leader>fcs` | Trigger flaoting colorscheme selector. |
 
-#### Packer
+#### Plugin manager
 | Mapping  |    Action     |
 |----------|:-------------:|
-|`<leader>PI`| Install all plugins |
-| `<leader>PS`| Sync/Upgrade all plugins |
+|`<leader>PI`| Install all plugins with Packer|
+| `<leader>PS`| Sync/Upgrade all plugins with Packer|
 
-#### Ranger
+#### File manager
 | Mapping  |      Action   |
 |----------|:-------------:|
 |`<leader>rr` | Open ranger in the current path. |

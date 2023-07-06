@@ -10,7 +10,6 @@ local function close_buffer()
   end
 end
 
- -- Eksportowanie funkcji close_buffer z modułu
  return {
    close_buffer = close_buffer
  }
