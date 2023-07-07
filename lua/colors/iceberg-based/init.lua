@@ -59,10 +59,10 @@ local function set_hl_groups()
         MoreMsg = { fg = "#b4be82" },
         NormalFloat = { bg = "#3d425b", fg = "#c6c8d1" }, -- diff
         Operator = { fg = "#84a0c6" },
-        Pmenu = { bg = "#3d425b", fg = "#c6c8d1" },
-        PmenuSBar = { bg = "#3d425b", fg = "NONE" },
-        PmenuSel = { bg = "#5b6389", fg = "#eff0f4" },
-        PmenuThumb = { bg = "#c6c8d1", fg = "NONE" },
+        Pmenu = { bg = "#181825", fg = "#c6c8d1" },
+        PmenuSBar = { bg = "#181825", fg = "NONE" },
+        PmenuSel = { bg = "#181825", fg = "#eff0f4" },
+        PmenuThumb = { bg = "#181825", fg = "NONE" },
         PreProc = { fg = "#b4be82" },
         Question = { fg = "#b4be82" },
         QuickFixLine = { bg = "#272c42", fg = "#c6c8d1" },
@@ -184,6 +184,11 @@ local function set_hl_groups()
         TermCursor = { link = "Cursor" },
         ToolbarButton = { link = "TabLineSel" },
         ToolbarLine = { link = "TabLineFill" },
+
+	--Custom
+	CocFloating = { bg = "#11111B" },
+	CocFloatDividingLine = { fg = "#8AADF4" },
+	CocInlayHint = { bg = "#11111B" , fg = "#6B7088"},
 
         -- Treesitter highlights
         ["@attribute"] = { link = "Special" },
