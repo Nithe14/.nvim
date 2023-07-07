@@ -47,6 +47,8 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<leader><cr>` | Clear all selected matching |
 | `<C-h/j/k/l>` | Switch focus to left/down/up/right window |
 |`<C-up/down>` | Trigger multi cursor. |
+
+
 **There is an error with the shade plugin. Coc HintFloat windows doesn't appear if shade is enabled. I'm working on it, but for now, if there is a hint sign (">>") in the left column, I disable the shade plugin with the `<leader>s` binding.**
 #### Telescope 
 
