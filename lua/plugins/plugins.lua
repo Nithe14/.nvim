@@ -38,6 +38,7 @@ use 'is0n/fm-nvim'
 use 'sunjon/shade.nvim'
 use 'folke/twilight.nvim'
 use { "catppuccin/nvim", as = "catppuccin" }
+use 'lfrati/onesearch.nvim'
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -46,8 +47,6 @@ use({
         })
     end
 })
-use 'lfrati/onesearch.nvim'
-
 if packer_bootstrap then
     require('packer').sync()
   end
