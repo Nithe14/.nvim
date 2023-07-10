@@ -5,12 +5,15 @@
 4. [Keybindings](#keybindings)
 5. [Completion](#completion)
 6. [Other features](#other-features)
-7. [Styles](#styles)
 
 ## About 
 I recently switched from vim (using vimscript) to neovim (using lua), so I decided to publish my new config. This is not final version of course. My goal is to improve my configuration and keep it the same accross two systems: macos and arch. 
 This is two days version of having fun with configuration. 
 
+There is a lualine with some theme, and iceberg-based colorscheme (https://github.com/cocopon/iceberg.vim) with my background but you probably change it so whatever.
+
+It looks like this:
+![preview](./assets/styles.png)
 ## Requirements
 - nvim >= 0.9.1
 - ripgrep (https://github.com/BurntSushi/ripgrep)
@@ -86,11 +89,5 @@ This config uses coc (https://github.com/neoclide/coc.nvim). So the code complet
 ```
 ## Other features 
 NeoVim can keep all changes you made in a single dir. I set it to ~/.config/nvim/undo. So you can undo and redo changes in any file even if you close it.
-
-## Styles 
-There is a lualine with some theme, and iceberg-based colorscheme (https://github.com/cocopon/iceberg.vim) with my background but you probably change it so whatever.
-
-It looks like this:
-![preview](./assets/styles.png)
 
 _That's it for now..._
