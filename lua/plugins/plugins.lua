@@ -26,7 +26,6 @@ use 'preservim/nerdcommenter'
 use {'rust-lang/rust.vim', branch = 'master'}
 use 'mbbill/undotree'
 use 'timonv/vim-cargo'
-use 'voldikss/vim-floaterm'
 use 'elzr/vim-json'
 use 'lambdalisue/nerdfont.vim'
 use 'mg979/vim-visual-multi'
@@ -39,6 +38,7 @@ use 'sunjon/shade.nvim'
 use 'folke/twilight.nvim'
 use { "catppuccin/nvim", as = "catppuccin" }
 use 'lfrati/onesearch.nvim'
+use "numToStr/FTerm.nvim"
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features

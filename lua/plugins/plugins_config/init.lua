@@ -1,7 +1,7 @@
 require("plugins.plugins_config.lualine")
 require("plugins.plugins_config.telescope")
 require("plugins.plugins_config.cargo")
-require("plugins.plugins_config.floaterm")
+require("plugins.plugins_config.FTerm")
 require("plugins.plugins_config.json")
 require("plugins.plugins_config.nerdcommenter")
 require("plugins.plugins_config.nerdfont")
