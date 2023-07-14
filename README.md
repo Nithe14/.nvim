@@ -17,6 +17,7 @@ It looks like this:
 ## Requirements
 - nvim >= 0.9.1
 - ripgrep (https://github.com/BurntSushi/ripgrep)
+- ranger (https://github.com/ranger/ranger)
 
 ## TL;DR
 Run this commands to install my configs:
