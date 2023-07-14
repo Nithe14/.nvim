@@ -18,6 +18,7 @@ It looks like this:
 - nvim >= 0.9.1
 - ripgrep (https://github.com/BurntSushi/ripgrep)
 - ranger (https://github.com/ranger/ranger)
+- gitui (https://github.com/extrawurst/gitui)
 
 ## TL;DR
 Run this commands to install my configs:
