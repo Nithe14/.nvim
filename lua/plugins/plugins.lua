@@ -47,6 +47,10 @@ use({
         })
     end
 })
+use({
+    "aserowy/tmux.nvim",
+    config = function() return require("tmux").setup() end
+})
 if packer_bootstrap then
     require('packer').sync()
   end
