@@ -44,6 +44,7 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 | `<leader>1q` | Force to close. Close all buffers, do not save them and do not warning about it.|
 | `<leader>y` | Toggle undo tree |
 | `<leader>tt` | Trigger floating terminal |
+|`<leader>gg`| Trigger floating gitui |
 |`<leader>c<Space>` | Comment/uncomment selected lines. In normal mode comment/uncomment current line. |
 |`<leader>l` | Toggle twilight (focus mode) |
 |`<leader>s` | Toggle shade (dim unselected tabs)|
@@ -63,12 +64,11 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<leader>fb` | Trigger floating buffers selector. |
 |`<leader>fl` | Trigger floating fuzzy line finder. |
 |`<leader>fm` | Trigger floating old files (mru) finder. |
-|`<leader>ft` | Trigger floating file tupe selector. |
+|`<leader>ft` | Trigger floating file type selector. |
 |`<leader>ftt` | Trigger floating treesitter (funcs, variable, structs finder). |
 |`<leader>fcs` | Trigger floating colorscheme selector. |
 |`<leader>fgc` | Trigger floating git commits selector. |
 |`<leader>fgb` | Trigger floating git branches selector. |
-|`<leader>fcs` | Trigger flaoting colorscheme selector. |
 
 #### Plugin manager
 | Mapping  |    Action     |
