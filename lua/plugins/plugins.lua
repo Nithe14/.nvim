@@ -41,6 +41,7 @@ use 'lfrati/onesearch.nvim'
 use "numToStr/FTerm.nvim"
 use("petertriho/nvim-scrollbar")
 use("lewis6991/gitsigns.nvim")
+use { 'nguyenvukhang/nvim-toggler' }
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
