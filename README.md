@@ -43,7 +43,6 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 | `<leader>w` |  Save current buffer |
 | `<leader>q` |  Close the buffer. If there is more buffers open only the current will be closed. |
 | `<leader>1q` | Force to close. Close all buffers, do not save them and do not warning about it.|
-| `<leader>y` | Toggle undo tree |
 | `<leader>tt` | Trigger floating terminal |
 |`<leader>gg`| Trigger floating gitui |
 |`<leader>c<Space>` | Comment/uncomment selected lines. In normal mode comment/uncomment current line. |
@@ -70,6 +69,7 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<leader>fcs` | Trigger floating colorscheme selector. |
 |`<leader>fgc` | Trigger floating git commits selector. |
 |`<leader>fgb` | Trigger floating git branches selector. |
+| `<leader>y` | Trigger floating undo history |
 
 #### Plugin manager
 | Mapping  |    Action     |
