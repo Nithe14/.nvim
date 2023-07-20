@@ -19,12 +19,11 @@ return require('packer').startup(function(use)
 }
 use {
   'nvim-telescope/telescope.nvim', tag = '0.1.2',
-   requires = { 'nvim-lua/plenary.nvim' }
+   requires = { 'nvim-lua/plenary.nvim', "debugloop/telescope-undo.nvim" }
 }
 use {'neoclide/coc.nvim', branch = 'release'}
 use 'preservim/nerdcommenter'
 use {'rust-lang/rust.vim', branch = 'master'}
-use 'mbbill/undotree'
 use 'timonv/vim-cargo'
 use 'elzr/vim-json'
 use 'lambdalisue/nerdfont.vim'
