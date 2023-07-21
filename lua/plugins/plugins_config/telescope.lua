@@ -11,6 +11,17 @@ require('telescope').setup {
 	["<C-k>"] = "move_selection_previous"
       }
     }
+  },
+  extensions = {
+        undo = {
+        mappings = {
+            i = {
+              ["<s-cr>"] = require("telescope-undo.actions").yank_additions,
+              ["<c-cr>"] = require("telescope-undo.actions").yank_deletions,
+              ["<cr>"] = require("telescope-undo.actions").restore
+            },
+        },
+      },
   }
 }
 local builtin = require('telescope.builtin')
