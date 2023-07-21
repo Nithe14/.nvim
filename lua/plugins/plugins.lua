@@ -41,6 +41,7 @@ use "numToStr/FTerm.nvim"
 use("petertriho/nvim-scrollbar")
 use("lewis6991/gitsigns.nvim")
 use { 'nguyenvukhang/nvim-toggler' }
+use 'fedepujol/move.nvim'
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -51,7 +52,11 @@ use({
 })
 use({
     "aserowy/tmux.nvim",
-    config = function() return require("tmux").setup() end
+    config = function() return require("tmux").setup({
+	    resize = {
+        	enable_default_keybindings = false
+		}
+	}) end
 })
 if packer_bootstrap then
     require('packer').sync()
