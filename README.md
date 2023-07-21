@@ -82,7 +82,13 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |----------|:-------------:|
 |`<leader>rr` | Open ranger in the current path. |
 
-
+#### Move
+| Mapping  |      Action   |
+|----------|:-------------:|
+|`<M-j>` | Move line/visual block down |
+|`<M-k>` | Move line/visual block up |
+|`<M-l>` | Move char/visual block left |
+|`<M-h>` | Move char/visual block right |
 
 ## Completion 
 This config uses coc (https://github.com/neoclide/coc.nvim). So the code completion is very powerful and simple to use. Just find your favorite language coc server and install it from vim command. Exmaple:
