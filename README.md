@@ -60,7 +60,7 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 | Mapping  |      Action   |
 |----------|:-------------:|
 | `<leader>ff` | Trigger floating fuzzy file finder. |
-|`<leader>fg` | Trigger floating live grep. | 
+|`<leader>fgr` | Trigger floating live grep. | 
 |`<leader>fb` | Trigger floating buffers selector. |
 |`<leader>fl` | Trigger floating fuzzy line finder. |
 |`<leader>fm` | Trigger floating old files (mru) finder. |
