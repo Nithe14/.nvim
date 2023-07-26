@@ -42,6 +42,7 @@ use("petertriho/nvim-scrollbar")
 use("lewis6991/gitsigns.nvim")
 use { 'nguyenvukhang/nvim-toggler' }
 use 'fedepujol/move.nvim'
+use { 'm-demare/hlargs.nvim' }
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
