@@ -59,6 +59,10 @@ use({
 		}
 	}) end
 })
+use({
+	'mvllow/modes.nvim',
+	tag = 'v0.2.1',
+})
 if packer_bootstrap then
     require('packer').sync()
   end
