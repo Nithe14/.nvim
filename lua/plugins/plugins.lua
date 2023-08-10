@@ -36,13 +36,15 @@ use 'is0n/fm-nvim'
 use 'sunjon/shade.nvim'
 use 'folke/twilight.nvim'
 use { "catppuccin/nvim", as = "catppuccin" }
-use 'lfrati/onesearch.nvim'
+use 'Nithe14/onesearch.nvim'
+--use 'lfrati/onesearch.nvim'
 use "numToStr/FTerm.nvim"
 use("petertriho/nvim-scrollbar")
 use("lewis6991/gitsigns.nvim")
 use { 'nguyenvukhang/nvim-toggler' }
 use 'fedepujol/move.nvim'
 use { 'm-demare/hlargs.nvim' }
+use { "chrisgrieser/nvim-spider" }
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
