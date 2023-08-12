@@ -36,7 +36,7 @@ use 'is0n/fm-nvim'
 use 'sunjon/shade.nvim'
 use 'folke/twilight.nvim'
 use { "catppuccin/nvim", as = "catppuccin" }
-use 'Nithe14/onesearch.nvim'
+use {'Nithe14/onesearch.nvim'} 
 --use 'lfrati/onesearch.nvim'
 use "numToStr/FTerm.nvim"
 use("petertriho/nvim-scrollbar")
