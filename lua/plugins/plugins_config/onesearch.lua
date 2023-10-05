@@ -18,3 +18,6 @@ require("onesearch").setup{
     hints = { "a", "s", "d", "f", "h", "j", "k", "l", "w", "e", "r", "u", "i", "o", "x", "c", "n", "m" }
 }
 vim.keymap.set("n", "/", ":lua require('onesearch').search()<CR>")
+vim.keymap.set({ "o", "n" }, "<leader>/", ":lua require('onesearch').search(io.popen(\"xclip -o\", \"r\"):read(\"*a\"))<CR>")
+vim.keymap.set({ "v" }, "/", ":<C-u>lua require('onesearch').visual_search()<CR>")
+vim.keymap.set({ "o", "n" }, "#", "ve:<C-u>lua require('onesearch').visual_search()<CR>")
