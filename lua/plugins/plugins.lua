@@ -24,7 +24,7 @@ use {
 use {'neoclide/coc.nvim', branch = 'release'}
 use 'preservim/nerdcommenter'
 use {'rust-lang/rust.vim', branch = 'master'}
-use 'timonv/vim-cargo'
+--use 'timonv/vim-cargo'
 use 'elzr/vim-json'
 use 'lambdalisue/nerdfont.vim'
 use 'mg979/vim-visual-multi'
