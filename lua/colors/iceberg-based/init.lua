@@ -66,7 +66,7 @@ local function set_hl_groups()
         PreProc = { fg = "#b4be82" },
         Question = { fg = "#b4be82" },
         QuickFixLine = { bg = "#272c42", fg = "#c6c8d1" },
-        Search = { bg = "#e4aa80", fg = "#392313" },
+        Search = { bg = "#F5A97F", fg = "#392313" },
         SignColumn = { bg = "#1e2132", fg = "#444b71" },
         Special = { fg = "#b4be82" },
         SpecialKey = { fg = "#515e97" },
