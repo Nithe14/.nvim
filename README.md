@@ -48,6 +48,7 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<leader>c<Space>` | Comment/uncomment selected lines. In normal mode comment/uncomment current line. |
 |`<leader>l` | Toggle twilight (focus mode) |
 |`<leader>s` | Toggle shade (dim unselected tabs)|
+|`<leader>i` | Trigger [ toggler ](https://github.com/nguyenvukhang/nvim-toggler) action |
 |`<M-Up/Down>` | Shade brightness up/down |
 |`<leader><cr>` | Clear all selected matching |
 | `<C-h/j/k/l>` | Switch focus to left/down/up/right window |
