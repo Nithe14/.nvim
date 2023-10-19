@@ -45,6 +45,12 @@ use { 'nguyenvukhang/nvim-toggler' }
 use 'fedepujol/move.nvim'
 use { 'm-demare/hlargs.nvim' }
 use { "chrisgrieser/nvim-spider" }
+use {'ThePrimeagen/vim-be-good'}
+use {'nacro90/numb.nvim'}
+use {
+    'chipsenkbeil/distant.nvim',
+    branch = 'v0.3',
+}
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features

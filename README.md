@@ -8,7 +8,6 @@
 
 ## About 
 I recently switched from vim (using vimscript) to neovim (using lua), so I decided to publish my new config. This is not final version of course. My goal is to improve my configuration and keep it the same accross two systems: macos and arch. 
-This is two days version of having fun with configuration. 
 
 There is a lualine with some theme, and iceberg-based colorscheme (https://github.com/cocopon/iceberg.vim) with my background but you probably change it so whatever.
 
@@ -71,6 +70,14 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<leader>fgc` | Trigger floating git commits selector. |
 |`<leader>fgb` | Trigger floating git branches selector. |
 | `<leader>y` | Trigger floating undo history |
+| `<leader>fs` | Trigger floating ssh connection selector |
+
+#### Remote
+**Now you can connect to the remote host using [distant](https://github.com/chipsenkbeil/distant.nvim) and edit files remotly!**
+| Mapping | Action |
+|----------|:-------------:|
+| `<leader>d` | Open connection info |
+| `<leader>o` | Open remote file director in user home path |
 
 #### Plugin manager
 | Mapping  |    Action     |
@@ -97,6 +104,7 @@ This config uses coc (https://github.com/neoclide/coc.nvim). So the code complet
 :CocInstall coc-rust-analyzer
 ```
 ## Other features 
-NeoVim can keep all changes you made in a single dir. I set it to ~/.config/nvim/undo. So you can undo and redo changes in any file even if you close it.
+- NeoVim can keep all changes you made in a single dir. I set it to ~/.config/nvim/undo. So you can undo and redo changes in any file even if you close it.
+- Now you can connect to the remote host using [distant](https://github.com/chipsenkbeil/distant.nvim) and edit files remotly! Just press `<leader>fs` to open telescope based on your~/.ssh/config. 
 
 _That's it for now..._
