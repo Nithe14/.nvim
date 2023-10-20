@@ -48,6 +48,15 @@ use { "chrisgrieser/nvim-spider" }
 use {'ThePrimeagen/vim-be-good'}
 use {'nacro90/numb.nvim'}
 use {
+  'kdheepak/tabline.nvim',
+  config = function()
+    vim.cmd[[
+      set guioptions-=e " Use showtabline in gui vim
+      set sessionoptions+=tabpages,globals " store tabpages and globals in session
+    ]]
+  end,
+  }
+use {
     'chipsenkbeil/distant.nvim',
     branch = 'v0.3',
 }

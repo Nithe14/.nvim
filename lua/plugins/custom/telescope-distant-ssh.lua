@@ -41,6 +41,7 @@ local function connectToSshHost(selected_host)
 	vim.api.nvim_exec(':DistantConnect ' .. connection, false)
 	vim.wait(200) -- wait till the connection established
 	vim.api.nvim_exec(':DistantOpen /', false)
+	vim.api.nvim_exec(':TablineTabRename ' .. selected_host .. " (" .. hostToConnect.hostname .. ")", false)
     end
 end
 

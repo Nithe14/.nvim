@@ -19,6 +19,11 @@ require('distant'):setup({
             up = 'h',
 	    edit = 'l', '<Return>'
         }
+    },
+    buffer = {
+        watch = {
+            enabled = true
+        }
     }
 })
 
