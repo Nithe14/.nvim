@@ -17,7 +17,9 @@ require('distant'):setup({
         dir = {
 	    enabled = true,
             up = 'h',
-	    edit = 'l', '<Return>'
+	    edit = 'l', '<Return>',
+	    newdir = 'M',
+	    metadata = 'D'
         }
     },
     buffer = {
@@ -28,4 +30,4 @@ require('distant'):setup({
 })
 
 vim.keymap.set('n', '<leader>d', [[ :Distant<CR>:lua vim.wait(1)<CR>:17<CR> ]], {})
-vim.keymap.set('n', '<leader>o', ':DistantOpen .<CR>', {})
+vim.keymap.set('n', '<leader>o', [[ :DistantOpen .<CR>:lua require('plugins.custom.telescope-distant-ssh').renameTab()<CR> ]], {})

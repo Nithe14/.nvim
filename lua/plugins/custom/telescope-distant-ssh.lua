@@ -6,6 +6,13 @@ local finders = require('telescope.finders')
 local pickers = require('telescope.pickers')
 local sorters = require('telescope.sorters')
 
+local function getHostInfo(linenumb)
+    local line = vim.fn.getline(linenumb)
+    local hostInfo = vim.fn.split(line, " ")
+    table.remove(hostInfo, 1)
+    table.remove(hostInfo, 1)
+    return hostInfo
+end
 
 local function loadSshHosts()
     local sshConfigFile = os.getenv("HOME") .. '/.ssh/config'
@@ -43,6 +50,31 @@ local function connectToSshHost(selected_host)
 	vim.api.nvim_exec(':DistantOpen /', false)
 	vim.api.nvim_exec(':TablineTabRename ' .. selected_host .. " (" .. hostToConnect.hostname .. ")", false)
     end
+end
+
+
+local function getCurrentConnection()
+	local linenumb = 17 -- Distant sessions first host
+	local host
+	for _ = 1, 10 do -- I don't like while true function ._. (and never have more then 10 connections opened at once)
+		vim.api.nvim_exec(':Distant', false)
+		vim.wait(1) -- wait til Distant window open
+		local line = vim.fn.getline(linenumb)
+		local check = string.sub(line, vim.fn.col(".")+2, vim.fn.col(".") + 2) -- the asterisk location (asterik shows the current connection)
+		if check == "*" then
+			host = getHostInfo(linenumb)
+			vim.api.nvim_exec(':q', true)
+			break
+		else
+			linenumb = linenumb + 1
+		end
+	end
+	return table.concat(host, " ")
+end
+
+function M.renameTab()
+	local host = getCurrentConnection()
+	vim.api.nvim_exec(':TablineTabRename ' .. host, false)
 end
 
 -- Open telescope picker
