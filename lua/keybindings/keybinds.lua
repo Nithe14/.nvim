@@ -5,3 +5,5 @@ vim.keymap.set('n', '<leader>q', ':lua require("keybindings.modules.close_buffer
 vim.keymap.set('n', '<leader><cr>', ':nohlsearch<cr>', {})
 vim.api.nvim_set_keymap('n', ';;', 'A;<ESC>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>vmd', ':MarkdownPreview<cr>', {})
+vim.keymap.set('n', '<leader>cpf', ':CocCommand php-cs-fixer.fix<cr>', {})
+vim.keymap.set('n', '<leader>cfr', ':CocCommand prettier.formatFile<cr>', {})

@@ -72,6 +72,12 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 | `<leader>y` | Trigger floating undo history |
 | `<leader>fs` | Trigger floating ssh connection selector |
 
+#### Coc
+| Mapping | Action |
+|---------|:-------|
+| `<leader>cfr` | Use coc-prettier to format the code (need coc-prettier to be installed `:CocInstall coc-prettier`) |
+
+
 #### Remote
 **Now you can connect to the remote host using [distant](https://github.com/chipsenkbeil/distant.nvim) and edit files remotly!**
 | Mapping | Action |
