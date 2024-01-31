@@ -27,7 +27,7 @@ require('telescope').setup {
 local builtin = require('telescope.builtin')
 local undo = require('telescope').extensions.undo.undo
 local ssh = require('plugins.custom.telescope-distant-ssh')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+--vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fgr', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fl', builtin.current_buffer_fuzzy_find, {})

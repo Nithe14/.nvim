@@ -49,6 +49,8 @@ use {'ThePrimeagen/vim-be-good'}
 use {'nacro90/numb.nvim'}
 use {'tomiis4/Hypersonic.nvim'}
 use { 'oem/arachne.nvim' }
+use {"FabianWirth/search.nvim"}
+use("roberte777/keep-it-secret.nvim")
 use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
