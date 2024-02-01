@@ -1,3 +1,19 @@
+require('move').setup({
+	line = {
+		enable = true, -- Enables line movement
+		indent = true  -- Toggles indentation
+	},
+	block = {
+		enable = true, -- Enables block movement
+		indent = true  -- Toggles indentation
+	},
+	word = {
+		enable = true, -- Enables word movement
+	},
+	char = {
+		enable = false -- Enables char movement
+	}
+})
 local opts = { noremap = true, silent = true }
 -- Normal-mode commands
 vim.keymap.set('n', '<M-j>', ':MoveLine(1)<CR>', opts)

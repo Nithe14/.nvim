@@ -7,7 +7,7 @@
 6. [Other features](#other-features)
 
 ## About 
-I recently switched from vim (using vimscript) to neovim (using lua), so I decided to publish my new config. This is not final version of course. My goal is to improve my configuration and keep it the same accross two systems: macos and arch. 
+This is my NeoVim config using lua and Pakcer as a plugin manager.  Not a final version of course. My goal is to improve my configuration and keep it the same accross two systems: macos and arch. 
 
 There is a lualine with some theme, and iceberg-based colorscheme (https://github.com/cocopon/iceberg.vim) with my background but you probably change it so whatever.
 
@@ -15,6 +15,7 @@ It looks like this:
 ![preview](./assets/styles.png)
 ## Requirements
 - nvim >= 0.9.1
+- packer.nvim (https://github.com/wbthomason/packer.nvim)
 - ripgrep (https://github.com/BurntSushi/ripgrep)
 - ranger (https://github.com/ranger/ranger)
 - gitui (https://github.com/extrawurst/gitui)
@@ -59,7 +60,7 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 
 | Mapping  |      Action   |
 |----------|:-------------:|
-| `<leader>ff` | Trigger floating fuzzy file finder. |
+| `<leader>ff` | Trigger floating fuzzy file finder. (Now you can switch between telescopes menu with tabulator)|
 |`<leader>fgr` | Trigger floating live grep. | 
 |`<leader>fb` | Trigger floating buffers selector. |
 |`<leader>fl` | Trigger floating fuzzy line finder. |
@@ -85,6 +86,15 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 | `<leader>d` | Open connection info |
 | `<leader>o` | Open remote file director in user home path |
 
+#### Notes
+I keep my notes using [arachne](https://github.com/oem/arachne.nvim) in the single directory ($HOME/.config/nvim/notes)
+| Mapping  | Action  |
+|----------|:-------:|
+|`<leader>nn`| Create new note |
+|`<leader>fn` | Find notes by telescope |
+| `<leader>fgn` | Grep from notes by telescope |
+| `<leader>nr` | Rename current note |
+
 #### Plugin manager
 | Mapping  |    Action     |
 |----------|:-------------:|
@@ -105,7 +115,7 @@ The most important keybind is as always leader. For me it is a `,` char. It's pr
 |`<M-h>` | Move char/visual block right |
 
 ## Completion 
-This config uses coc (https://github.com/neoclide/coc.nvim). So the code completion is very powerful and simple to use. Just find your favorite language coc server and install it from vim command. Exmaple:
+This config uses [coc](https://github.com/neoclide/coc.nvim). So the code completion is very powerful and simple to use. Just find your favorite language coc server and install it from vim command. Exmaple:
 ```vim
 :CocInstall coc-rust-analyzer
 ```

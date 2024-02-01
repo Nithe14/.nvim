@@ -6,4 +6,4 @@ vim.keymap.set('n', '<leader>nn',
             vim.keymap.set('n', '<leader>nr',
                     function() return require('arachne').rename() end)
 vim.keymap.set('n', '<leader>fn', ":lua require('plugins.custom.arachne-addons').find_files()<cr>")
-vim.keymap.set('n', '<leader>fsn', ":lua require('plugins.custom.arachne-addons').search_notes()<cr>")
+vim.keymap.set('n', '<leader>fgn', ":lua require('plugins.custom.arachne-addons').search_notes()<cr>")
