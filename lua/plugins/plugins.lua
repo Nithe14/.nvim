@@ -31,7 +31,7 @@ use 'mg979/vim-visual-multi'
 use 'Einenlum/yaml-revealer'
 use 'nvim-tree/nvim-web-devicons'
 use 'jiangmiao/auto-pairs'
-use 'nvim-treesitter/nvim-treesitter'
+use {'nvim-treesitter/nvim-treesitter', cmd = ':TSUpdate'}
 use 'is0n/fm-nvim'
 use 'sunjon/shade.nvim'
 use 'folke/twilight.nvim'
@@ -51,7 +51,7 @@ use {'tomiis4/Hypersonic.nvim'}
 use { 'oem/arachne.nvim' }
 use {"FabianWirth/search.nvim"}
 use("roberte777/keep-it-secret.nvim")
-use({
+use ({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
 })
