@@ -1,12 +1,17 @@
 local builtin = require('telescope.builtin')
 local ssh = require('plugins.custom.telescope-distant-ssh')
 local arachne_addons = require('plugins.custom.arachne-addons')
+local cdproject = require("cd-project.adapter.telescope")
 require("search").setup({
   mappings = { -- optional: configure the mappings for switching tabs (will be set in normal and insert mode(!))
     next = "<Tab>",
     prev = "<S-Tab>"
   },
   append_tabs = { -- append_tabs will add the provided tabs to the default ones
+    {
+      "Projects",
+      cdproject.cd_project
+    },
     {
       "Commits", -- or name = "Commits"
       builtin.git_commits, -- or tele_func = require('telescope.builtin').git_commits

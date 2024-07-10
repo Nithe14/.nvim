@@ -188,7 +188,7 @@ local function set_hl_groups()
 	--Custom
 	CocFloating = { bg = "#11111B" },
 	CocFloatDividingLine = { fg = "#8AADF4" },
-	CocInlayHint = { bg = "#11111B" , fg = "#6B7088"},
+	CocInlayHint = { bg = "" , fg = "#6B7088"},
 
         -- Treesitter highlights
         ["@attribute"] = { link = "Special" },
