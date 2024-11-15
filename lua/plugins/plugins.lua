@@ -31,7 +31,14 @@ use 'mg979/vim-visual-multi'
 use 'Einenlum/yaml-revealer'
 use 'nvim-tree/nvim-web-devicons'
 use 'jiangmiao/auto-pairs'
-use {'nvim-treesitter/nvim-treesitter', cmd = ':TSUpdate'}
+--use {'nvim-treesitter/nvim-treesitter', cmd = ':TSUpdate'}
+use {
+	'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+	end,
+}
 use 'is0n/fm-nvim'
 use 'sunjon/shade.nvim'
 use 'folke/twilight.nvim'

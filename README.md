@@ -1,7 +1,7 @@
 ## Table of Contents
 1. [About](#about)
 2. [Requirements](#requirements)
-3. [TL;DR](#tldr)
+3. [Install](#install)
 4. [Keybindings](#keybindings)
 5. [Completion](#completion)
 6. [Other features](#other-features)
@@ -15,24 +15,22 @@ It looks like this:
 ![preview](./assets/styles.png)
 ## Requirements
 - nvim >= 0.9.1
-- packer.nvim (https://github.com/wbthomason/packer.nvim)
-- ripgrep (https://github.com/BurntSushi/ripgrep)
-- ranger (https://github.com/ranger/ranger)
-- gitui (https://github.com/extrawurst/gitui)
+- nodejs
+- npm
+- gcc
+- nerd-fonts (recommended)
 
-## TL;DR
-Run this commands to install my configs:
+## Install
+Run this commands to install my config:
 ```bash
 #Maybe backup your current config first ;)
 $ git clone https://github.com/Nithe14/.nvim.git ~/.config/nvim
-$ sed -i "s/nithe/$USER/g" ~/.config/nvim/lua/variables.lua
-```
-The config is ready! This is time to install all plugins. Run this commands in nvim:
-```vim
-:PackerInstall
-:PackerSync
+$ cd ~/.config/nvim
+$ bash install.sh
 ```
 Everything should be set up :)
+
+Open `nvim` and run `:PackerStatus` to see what have been installed.
 
 ## Keybindings
 The most important keybind is as always leader. For me it is a `,` char. It's pretty handy, don't you think?
